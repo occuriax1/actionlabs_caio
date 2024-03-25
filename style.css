@@ -1,0 +1,469 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif; 
+	background-color: #F4F4F4;
+  }
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #05CFFC;
+	width: 100%;
+	height: 60px;
+	gap: 0px;
+	opacity: 0px;
+
+}
+
+.logo {
+	width: 130px;
+	height: 10px; 
+	padding: 13px 0; 
+	border: 1px solid #FFFFFF;
+	margin-left: 240px;
+	background-color: #05CFFC;
+	text-align: center;
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 20px;
+  }
+  
+  
+.menu {
+	flex-grow: 1; 
+	display: flex;
+	justify-content: flex-end; 
+	margin-right: 80px;
+  }
+  .menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .menu li {
+	display: inline-block;
+  }
+  
+  .menu a {
+	text-decoration: none;
+	color: #05CFFC;
+	background-color: #FFFFFF;
+	padding: 10px 20px;
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	display: inline-block; 
+	text-transform: uppercase;
+  }
+  .cliente-section {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    background-image: url(/wp-content/uploads/2024/03/header.jpeg);
+    background-size: cover;
+    background-position: center 35%;
+    color: white;
+    height: 260px;
+    opacity: 0.6;
+    background-color: rgba(7, 7, 7, 0.795);
+    padding-top: 320px;
+    padding-left: 245px;
+  }
+  
+  .cliente-title {
+	margin: 0;
+	font-size: 2.5em;
+	font-family: Avenir;
+	font-size: 64px;
+	font-weight: 800;
+	line-height: 69px;
+  }
+
+.cards {
+    position: relative;
+    z-index: 2;
+    top: -200px;
+    display: flex;
+	justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+	position: relative;
+	background-color: #ffffff; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	margin: 15px; 
+	padding-bottom: 20px; 
+	border-radius: 4px; 
+	flex-basis: calc(33.333% - 170px);
+	max-width: calc(33.333% - 170px);
+	transition: transform 0.3s; 
+  }
+  .card-badge {
+	position: absolute;
+	top: 20px; 
+	right: 20px; 
+	background-color: #F4F4F4;
+	color: #000000; 
+	padding: 5px 15px; 
+	border-radius: 15px; 
+	font-size: 0.75em; 
+	font-weight: bold; 
+  }
+  
+  .card:hover {
+	transform: translateY(-5px);
+  }
+  
+  .card-image {
+	height: 300px; 
+  }
+  
+  .card img {
+	border-radius: 4px 4px 0 0;
+	width: 100%;
+	height: 100%; 
+	object-fit: cover; 
+  }
+
+  .card h2 {
+	font-family: Avenir;
+	font-size: 24px;
+	font-weight: 800;
+	color: #01758D;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 20px;
+	
+  }
+  
+  .card p {
+	font-family: 'Roboto', sans-serif;;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #666666;
+	padding: 0 20px;
+  }
+  
+  .card a.read-more {
+	color: #01758D;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 20px; 
+	font-weight: bold; 
+	margin-top: 15px; 
+	display: inline-block;
+  }
+
+  
+  .site-footer {
+	background-color: #05CFFC;
+	color: white;
+	text-align: center;
+	padding-top: 20px; 
+  }
+  .footer-top {
+	border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    width: 1440px;
+    margin-left: 225px;
+  }
+  .footer-content {
+	max-width: 100%;
+	margin: 0 auto; 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	padding: 0 15px; 
+  }
+  
+  .footer-logo {
+	width: 130px;
+    height: 10px;
+    padding: 13px 0;
+    border: 1px solid #FFFFFF;
+    margin-left: 0px;
+    background-color: #05CFFC;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: 'Roboto', sans-serif;;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 20px;
+  }
+  .footer-bottom {
+	padding: 10px 0;
+  }
+  
+  .footer-copy {
+    padding: 10px;
+	margin-left: 1000px;
+  }
+.card h2::before,
+.card h2::after,
+.card p::before,
+.card p::after {
+  content: none !important;
+}
+.card h2 a,
+.card p a {
+  text-decoration: none !important; 
+  border: none !important; 
+}
+.card-summary,
+.card-summary::after {
+  text-decoration: none  !important;
+  border-bottom: none  !important;
+  content: none !important; 
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+	.header {
+	  flex-direction: column;
+	  padding: 1em;
+	  height: auto; 
+	}
+  
+	.logo {
+	  margin-left: 0; 
+	  width: auto; 
+	}
+  
+	.menu {
+	  justify-content: center;
+	  margin-right: 0;
+	}
+  
+	.menu a {
+	  margin: 5px; 
+	  padding: 5px 10px; 
+	}
+  
+	.cliente-section {
+	  padding-top: 20px;
+	  padding-left: 20px; 
+	  height: auto; 
+	  background-position: center 20%; 
+	}
+  
+	.cliente-title {
+	  font-size: 32px; 
+	}
+  
+	.cards {
+	  top: 0; 
+	  padding: 0; 
+	}
+  
+	.card {
+	  flex-basis: 100%;
+	  max-width: 100%; 
+	  margin: 10px 0;
+	}
+  
+	.card-image {
+	  height: auto; 
+	}
+  
+	.footer-top {
+	  border-bottom: none; 
+	  width: auto; 
+	  margin-left: 2px; 
+	  padding-bottom: 0; 
+	}
+  
+	.footer-content {
+	  flex-direction: column; 
+	}
+  
+	.footer-logo,
+	.footer-copy {
+	  align-self: center; 
+	  margin-left: 0;
+	}
+  
+	.footer-copy {
+	  margin-top: 10px; 
+	}
+  }
+/*FIM DO CSS DA HOME */	
+
+/*INICIO DO CSS PARA AS INTERNAS*/
+.page-header {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 460px;
+  }
+  
+  .page-header-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+  }
+  
+  .container {
+	width: 35%;
+	margin: 0 auto;
+  }
+  
+  .page-title {
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	z-index: 2;
+  }
+  
+  .post-content-container {
+	position: relative;
+	top: -170px; 
+	background: white;
+	padding: 2em;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+	margin-left: 300px;
+  }
+  
+  .post-content {
+	font-size: 1em;
+	color: #525252;
+  }
+  
+  /* Estilização de elementos */
+  .wp-block-post-terms a {
+	box-sizing: border-box;
+	position: relative;
+	background-color: #01758D;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 15px;
+	font-size: 0.75em;
+	font-weight: bold;
+	text-decoration: none !important;
+  }
+  
+  .wp-block-post-date {
+	padding-top: 10px;
+	color: #525252;
+  }
+  
+  .wp-block-heading {
+	font-family: Avenir;
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 52px;
+	color: #525252;
+  }
+  
+  /* Responsividade */
+  @media only screen and (max-width: 768px) {
+	.page-header {
+	  height: auto;
+	  background-position: center 35%;
+	}
+  
+	.container,
+	.post-content-container {
+	  width: 90%;
+	  margin-left: 5%;
+	  margin-right: 5%;
+	}
+  
+	.page-header-overlay {
+	  background: rgba(0, 0, 0, 0.7);
+	}
+  
+	.page-title {
+	  font-size: 1.5em;
+	}
+  
+	.post-content {
+	  font-size: 0.9em; 
+	}
+  
+	.wp-block-post-terms a {
+	  font-size: 0.65em; 
+	}
+  
+	.wp-block-heading {
+	  font-size: 1.2em;
+	}
+	
+	
+	.post-content-container {
+	  top: 0;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+  }
+  
+
+/*FIM DO CSS DAS Internas */	
+
+/*INICIO DO CSS PARA A PÁGINA SOBRE NOS*/
+.about-header {
+    background-color: #F4F4F4;
+}
+
+.container-about {
+    width: 40%;
+    margin: 0 auto;
+    text-align: justify;
+	margin-left: 240px;
+}
+
+.about-title {
+	font-family: Avenir;
+	font-size: 64px;
+	font-weight: 800;
+	line-height: 69px;
+	text-align: left;
+	color: #01758D;
+	
+}
+
+
+.about-content .content {
+    background-color: #F4F4F4; 
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem; 
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+
+    .container-about {
+        width: 100%;
+		margin: 0 auto;
+		text-align: justify;
+		margin-left: 0;
+    }
+
+    .about-content .content {
+        padding: 15px;
+    }
+}
